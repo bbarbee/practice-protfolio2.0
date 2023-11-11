@@ -1,0 +1,90 @@
+* {
+    
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+body{
+    background-color: #D4BEBA;
+}
+
+
+/* step 2-Add a background color to the top navigation */
+
+.navbar {
+    background-color: #d5957d;
+    overflow: hidden;
+}
+
+/*style the links inside the nav*/
+
+.navBarFloat {
+    float:right;
+    
+}
+
+.navbar a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;  
+}
+
+.navbar a:hover {
+    background-color: rgb(116, 116, 174);
+    color: #d5957d;
+}
+
+.navbar a.active {
+    background-color: #fde9c9;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .navbar a:not(:first-child){display: none;}
+    .navbar a.icon{
+        float:right;
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+        position: absolute
+        right: 0;
+        top: 0;
+    }
+    .navbar.resposive a{
+        float: none;
+        display:block;
+        text-align: left;
+    }
+    
+}
+
+/* 2-Style the links inside the navigation bar */
+
+/* 2-Change the color of links on hover */
+
+/* 2-Add a color to the active/current link */
+
+/*3- Style hero section https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+
+/*4- style about me https://www.w3schools.com/howto/howto_css_about_page.asp */
+
+/*6- style the contact form https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+
+/*7 style the footer https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+
+.footer {
+    background: #d5957d;
+}
