@@ -4,16 +4,25 @@
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-variant: small-caps;
     margin: 0;
+    padding: 0;
 }
 
 body{
     background-color: #D4BEBA;
 }
 
+.logo{
+    float: left;
+    border-radius: round;
+    width: 50px;
+
+}
+
 
 /* step 2-Add a background color to the top navigation */
 
 .navbar {
+    
     background-color: #d5957d;
     overflow: hidden;
 }
@@ -22,11 +31,13 @@ body{
 
 .navBarFloat {
     float:right;
+    width: 100%;
     
 }
 
 .navbar a {
-    
+    float: right;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -85,6 +96,8 @@ body{
 
 /*7 style the footer https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
 
+
+
 .footer {
     background: #d5957d;
 }
@@ -93,4 +106,13 @@ body{
     width: 150px;
     padding: 4px;
 
+}
+
+#profilePic{
+    
+    outline-style: dotted;
+    outline-color: white;
+    border-radius: 50%;
+    float: right;
+    
 }

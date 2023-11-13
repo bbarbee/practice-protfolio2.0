@@ -11,17 +11,18 @@
 <body>
     <!-- Create a Navbar this is the first thing seen on the site -->
     <div class="navBarFloat">
-        <div class="navbar" id="topNav">
-            <a class="active" href="">Home</a>
-            <a href="">Projects</a>
-            <a href="">Skills</a>
-            <a href="">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="hambuger()"><i class="fa-duotone fa-bars"></i></a>
+        <div class="navbar" id="myNavBar">
+            <img src="images/Color-Palette-405-with-Hex-Codes.webp" alt="" class="logo">
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="hambuger()"><i class="fa-duotone fa-bars"></i>
         </div>
     </div>
 
     <!--Hero Section-->
-    <div class="heroImage">
+    <div class="heroImage" id="Home">
         <div class="heroText">
             <h2>Hi, I'm Brooke Barbee </h2>
             <p>I'm a full stack web developer.</p>
@@ -33,19 +34,20 @@
     <!--About me-->
     <div class="aboutMe">
         <h3>About Me</h3>
+        <img src="images/IMG_0014 brooke pink.jpg" alt="Brooke" id="profilePic">
         <p>Brief introduction about me, experience, current projects</p>
-        <p>skills skills skills skills skill skills</p>
+        <p id="skills">skills skills skills skills skill skills</p>
 
     </div>
 
     <!--Projects-->
-    <div class="projects">
+    <div class="projects" id="projects">
         <!--add certificates and projects here-->
 
     </div>
 
     <!--contact section-->
-    <div class="container">
+    <div class="container" id="contact">
         <h3>Send me an email</h3>
 
     </div>
@@ -55,13 +57,13 @@
     <div class="column">
         <form action="" id="contactForm">
             <label for="fristName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="Your name"><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Your name" style="color: black;"><br>
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Your last name"><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Your last name" style="color: black;"><br>
             <label for="email">Email address:</label>
-            <input type="text" id="email" placeholder="Enter your email address here"><br>
+            <input type="text" id="email" placeholder="Enter your email address here" style="color: black;"><br>
             <label for="subject">Subject:</label><br>
-            <textarea name="subject" id="subject" placeholder="Write your request here.." style="height: 200px;"></textarea><br>
+            <textarea name="subject" id="subject" placeholder="Write your request here.." style="height: 200px; color: black;"></textarea><br>
             <button type="submit" id="bttn" onclick="submitForm()">Send</button>
         </form>
     </div>
@@ -74,7 +76,7 @@
     </div>
 
 
-    <script src="navBar.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
